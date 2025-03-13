@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bloco {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            padding: 0.7rem;
+            border-radius: 1rem;
+
+        }
+        .container{
+            
+            padding: 1rem;
+            border: 1px solid gray;
+            box-shadow: .5rem .5rem .3rem .01rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .poVota{
+            background-color: green;
+        }
+        .npoVota{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            var idade
+            idade = parseInt(prompt("Informe o sua idade:"));
+            
+
+
+
+    
+            
+            alert(`Olá Pica suada Bem vindo ao site`);
+
+
+            if ((idade & 1) == 0){
+                document.write(`<div class="bloco poVota">Par</div>`);
+            }else{
+                document.write(`<div class="bloco npoVota">Ímpar</div>`);
+
+            }
+            
+        </script>
+    </div>
+</body>
+
+</html>
